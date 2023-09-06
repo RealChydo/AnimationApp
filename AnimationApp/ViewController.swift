@@ -26,10 +26,9 @@ final class ViewController: UIViewController {
 
     @IBAction private func runButtonTapped(_ sender: UIButton) {
         animationView.animate()
-        self.updateLabelValues()
-        self.updateAnimation()
-        sender.setTitle("Run \(self.animationView.animation)", for: .normal)
-        
+        updateLabelValues()
+        updateAnimation()
+        sender.setTitle("Run \(animationView.animation)", for: .normal)
     }
     
     private func updateLabelValues() {
